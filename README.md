@@ -86,7 +86,7 @@ kubectl get pods
 - go look at them
 
 ``` bash
-curl -I training-a:<port>
+curl -I 13.90.136.15:<port>
 ```
 
 ### Ingress
@@ -107,7 +107,7 @@ kubectl apply -k deployment/overlay/ingress/fanout
 ```
 
 - visit <https://13.90.136.15> (fail)
-- visit <https://training.cl.monach.us/nginx> (works)
+- visit <https://13.90.136.15/nginx> (works)
 - deploy rancher-demo application
 
 ```bash
@@ -128,7 +128,7 @@ docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /opt/rancher:/var/
 ### Node Deploy
 
 - Show how we would deploy an RKE cluster
-- Import the `training-a` k3s cluster
+- Import the `13.90.136.15` k3s cluster
 
 ### Rancher Server Walkthrough
 
